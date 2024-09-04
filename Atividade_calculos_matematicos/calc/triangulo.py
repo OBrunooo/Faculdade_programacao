@@ -1,4 +1,4 @@
-def triangulo ():
+def triangle ():
     ok_values = False
     while(ok_values == False) :
         try:

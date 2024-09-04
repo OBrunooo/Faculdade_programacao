@@ -4,7 +4,7 @@ def menu ():
         try:
             print("""---- MENU ----
 1- Área do triângulo
-2- Área do quadrado
+2- Perímetro do retângulo
 3- Área do circulo
 4- Volume do cilíndro 
 5- Finalizar programa                 
