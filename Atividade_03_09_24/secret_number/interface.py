@@ -5,7 +5,7 @@ def thanks():
     print("obrigado por utilizar o nosso jogo do número secreto !")
 
 def introduction():
-    print("Neste jogo o computador vai gerar um número aleatório entre 0 e 100. Voce tem que adivinhar qual valor foi gerado:")
+    print("Neste jogo o computador vai gerar um número aleatório entre 0 e 100. Você tem que adivinhar qual valor foi gerado:")
 
 def first_attempt ():
     attempt = int(input("Dê o seu primeiro chute: "))

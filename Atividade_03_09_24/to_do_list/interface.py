@@ -4,7 +4,7 @@ def welcome():
 def thanks():
     print("obrigado por utilizar o nosso sistema de lista de tarefas !")
 
-def menu():
+def select_menu():
     option_menu = int(input("""=== MENU ===
 1- Adicionar tarefa                            
 2- Mostrar lista
