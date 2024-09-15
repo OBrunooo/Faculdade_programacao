@@ -1,27 +1,29 @@
-from .list import *
-from .interface import *
+from to_do_list import interface as i
+from to_do_list import list_task as l
+
+
 
 def to_do_list():
     return_menu = True
     list = []
-    welcome()
+    i.welcome()
 
     while return_menu == True:
-        menu = select_menu()
+        menu = i.select_menu()
         match menu :
             case 1:
-                show_list(list)
-                value = add_task()
-                list = add_task_to_list(list, value)
+                i.show_list(list)
+                value = i.add_task()
+                list = l.add_task_to_list(list, value)
             case 2:
-                show_list(list)
+                i.show_list(list)
             case 3:
-                show_list(list)
-                remove = remove_task()
-                list = remove_task_to_list(list, remove)
+                i.show_list(list)
+                remove = i.remove_task()
+                list = l.remove_task_to_list(list, remove)
             case 4:
                 print("Lista reiniciada")
-                list = reset_list()
+                list = l.reset_list()
             case 5: 
-                thanks()
+                i.thanks()
                 return_menu = False

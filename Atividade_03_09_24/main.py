@@ -1,8 +1,8 @@
 import interface as i
-from calculator import main as calc
-from converter import main as convert
-from secret_number import main as s_number
-from to_do_list import main as td_list
+from calculator import calcula
+from converter import converter
+from secret_number import secret_number
+from to_do_list import to_do_list
 
 def main():
     return_menu = True
@@ -11,13 +11,13 @@ def main():
         select_menu = i.menu()
         match select_menu:
             case 1:
-                calc.calculator()
+                calcula()
             case 2:
-                convert.converter()
+                converter()
             case 3:
-                s_number.secret_number()
+                secret_number()
             case 4:
-                td_list.to_do_list()
+                to_do_list()
             case 5: 
                 return_menu = False
                 i.thanks()

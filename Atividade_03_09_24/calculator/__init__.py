@@ -1,2 +1,1 @@
-from .main import *
-
+from calculator.main import calcula

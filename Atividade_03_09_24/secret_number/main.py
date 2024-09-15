@@ -1,27 +1,27 @@
 import random
-from .interface import *
-from .calc import *
+from secret_number import interface as i
+from secret_number import calc as c
 
 def secret_number():
     play = True
     while play == True:
-        joker = random.randint(0, 100)
-        welcome()
-        introduction()
-        attempt = first_attempt()
+        secret_number = random.randint(0, 100)
+        i.welcome()
+        i.introduction()
+        attempt = i.first_attempt()
 
         attempts = 0
         is_right = False
         while is_right == False:
             attempts = attempts + 1
-            check = checking(joker, attempt)
+            check = c.checking(secret_number, attempt)
             match check:
                 case 'ok':
-                    congratulations(joker, attempts)
+                    i.congratulations(secret_number, attempts)
                     is_right = True
                 case 'big':
-                    attempt = number_bigger()
+                    attempt = i.number_bigger()
                 case 'small':
-                    attempt = number_small()
-        play = play_again()
-    thanks()
+                    attempt = i.number_small()
+        play = i.play_again()
+    i.thanks()
