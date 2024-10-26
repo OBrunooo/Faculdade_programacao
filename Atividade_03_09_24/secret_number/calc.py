@@ -1,7 +1,7 @@
-def checking(joker, attempt):
-    if(joker == attempt):
+def checking(secret_number, attempt):
+    if(secret_number == attempt):
         return 'ok'
-    if(joker > attempt):
+    if(secret_number > attempt):
         return 'small'
-    if(joker < attempt):
+    if(secret_number < attempt):
         return 'big'

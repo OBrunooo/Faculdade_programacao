@@ -19,7 +19,7 @@ Subtração: -
 Multiplicação: X
 Divisão: /   
 
-Escolha o sua operacação:                                                                                                                     
+Escolha o sua operacação:                                                                                                                  
 """))
     return option
 

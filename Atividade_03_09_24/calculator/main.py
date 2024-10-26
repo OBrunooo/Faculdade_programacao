@@ -1,29 +1,28 @@
-from .calc import *
-from .interface import *
+from calculator import calc as c
+from calculator import interface as i
 
-def calculator ():
+def calcula ():
+    
     return_menu = True
     select_menu = 2
-    welcome()
+    i.welcome()
     while return_menu == True:
         match select_menu:
             case 1:
-                v1 = value1()
-                v2 = value2()
-                calc(v1,v2,option)
-                select_menu = menu()
+                v1 =i.value1()
+                v2 =i.value2()
+                c.calc(v1,v2,option)
+                select_menu =i.menu()
             case 2:
-                option = operator()
-                v1 = value1()
-                v2 = value2()
-                calc(v1,v2,option)
-                select_menu = menu()
+                option = i.operator()
+                v1 =i.value1()
+                v2 =i.value2()
+                c.calc(v1,v2,option)
+                select_menu =i.menu()
             case 3: 
                 return_menu = False
-                thanks()
+                i.thanks()
                 
-
-
 
 if __name__ == "__main__" :
     calculator()
