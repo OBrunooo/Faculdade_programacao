@@ -12,7 +12,12 @@ def main():
 4_ Alimentar
 5_ Brincar
               """)
-        option = int(input("Selecione um: "))
+        while True:
+            try:
+                option = int(input("Selecione uma opção: "))
+                break
+            except:
+                print("Opção digitada inválida. Digite uma opção válida Ex: 1")
         if(option == 1):
             dog.status()
         elif(option == 2):
@@ -23,5 +28,4 @@ def main():
             dog.feed()
         elif(option == 5):
             dog.play()
-
 main()
